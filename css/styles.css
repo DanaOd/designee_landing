@@ -1,0 +1,20 @@
+/*
+colors
+
+#FFC75F yellow
+#F1F6FA blue bg
+#232536 black
+#E07B37 orange
+#6193CB blue
+#FFFFFF white
+
+*/
+
+body {
+  background-color: #ffffff;
+  color: #232536;
+}
+
+ul {
+  list-style: none;
+}
