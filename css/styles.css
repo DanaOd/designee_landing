@@ -14,18 +14,105 @@ colors
 body {
   background-color: #ffffff;
   color: #232536;
+  font-family: Helvetica, sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-.site-nav a {
+a {
   color: #232536;
   font-size: 14px;
   text-decoration: none;
 }
-.site-nav a:hover {
+
+/*  вопрос 1
+я хотела поставить стиль просто классу .site-nav но это не сработало. 
+Вроде как ссылки не унаследуют цвет текста ни от куда, и им нужно менять непосредственно (синий на черный например)
+Вопрос: лучше ставить стиль элементу по всей странице, ии конкретному эл-у в классе?
+
+.site-nav a {
+  color: #232536;
+  font-size: 14px;
+  text-decoration: none;
+} 
+
+ниже я вот решила что мне легче задать стиль всем ссылкам на странице. Это ок?
+(а если что-потом менять в частности)
+*/
+a:hover,
+a:focus {
   color: #e07b37;
   text-decoration: underline;
+}
+
+.logo {
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.1);
+}
+
+.section {
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.benefits-body-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #6b7479;
+}
+
+.benefit-item {
+  width: 220px;
+}
+
+.benefit-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b7479;
+}
+
+.benefit-item img {
+  position: center;
+  width: 80px;
+  height: 80px;
+}
+
+.image-box {
+  width: 205px;
+  height: 220px;
+  background: #f1f6fa;
+  border-radius: 4px;
+}
+
+.image-box:hover,
+.image-box:focus {
+  background: #ffc75f;
 }
