@@ -90,6 +90,7 @@ h3 {
 
 .benefit-item {
   width: 220px;
+  float: left;
 }
 
 .benefit-item p {
