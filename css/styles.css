@@ -4,6 +4,7 @@ colors
 #FFC75F yellow
 #F1F6FA blue bg
 #232536 black
+#6B7479 grey body-text
 #E07B37 orange
 #6193CB blue
 #FFFFFF white
@@ -17,4 +18,14 @@ body {
 
 ul {
   list-style: none;
+}
+
+.site-nav a {
+  color: #232536;
+  font-size: 14px;
+  text-decoration: none;
+}
+.site-nav a:hover {
+  color: #e07b37;
+  text-decoration: underline;
 }
