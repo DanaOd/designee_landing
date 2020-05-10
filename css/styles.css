@@ -1,8 +1,8 @@
 :root {
   --white-color: #ffffff;
-  --blue-bg-color: #f1f6fa;
+  --light-bg-color: #f1f6fa;
   --black-color: #232536;
-  --grey-body-text-color: #6b7479;
+  --body-text-color: #6b7479;
   --yellow-accent-color: #ffc75f;
   --orange-accent-color: #e07b37;
   --blue-accent-color: #6193cb;
@@ -40,7 +40,7 @@ a {
 */
 a:hover,
 a:focus {
-  color: var(--accent-orange-color);
+  color: var(--orange-accent-color);
   text-decoration: underline;
 }
 
@@ -69,6 +69,8 @@ h2 {
   font-size: 36px;
   line-height: 41px;
   text-align: center;
+  margin: 0 0 50px 0;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -80,6 +82,7 @@ h3 {
 
 .benefit-item {
   width: 220px;
+  margin: 0 36px 36px 36px;
   float: left;
 }
 
@@ -90,7 +93,7 @@ h3 {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: var(--grey-body-text-color);
+  color: var(--body-text-color);
 }
 
 .benefit-item img {
@@ -102,11 +105,37 @@ h3 {
 .image-box {
   width: 205px;
   height: 220px;
-  background: var(--blue-bg-color);
+  background: var(--light-bg-color);
   border-radius: 4px;
 }
 
 .image-box:hover,
 .image-box:focus {
   background: var(--yellow-accent-color);
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  margin: 30px;
+  border-radius: 30px;
+  border-color: transparent;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+
+  line-height: 20px;
+  padding: 10px;
+}
+
+.blue-button {
+  background: var(--blue-accent-color);
+  box-shadow: 0px 4px 8px rgba(79, 128, 183, 0.5);
+}
+
+.orange-button {
+  background: var(--orange-accent-color);
+  box-shadow: 0px 4px 8px rgba(119, 67, 32, 0.5);
 }
