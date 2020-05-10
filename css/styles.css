@@ -22,6 +22,7 @@ ul {
 a {
   color: var(--black-color);
   font-size: 14px;
+  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -67,27 +68,29 @@ a:focus {
 }
 
 h1 {
+  margin: 0 0 40px 0;
+
   font-weight: bold;
   font-size: 42px;
-  line-height: 60px;
+  line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 40px 0;
 }
 
 h2 {
+  margin: 0 0 50px 0;
+
   font-weight: bold;
   font-size: 36px;
-  line-height: 41px;
+  line-height: 1.4;
   text-align: center;
-  margin: 0 0 50px 0;
   text-transform: capitalize;
 }
 
 h3 {
   font-weight: bold;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -121,15 +124,14 @@ h3 {
 .hero-section {
   background-color: rgb(36, 34, 41);
   color: var(--white-color);
-  height: 600px;
+  /* height: 600px; */
 }
 
 .tag-text {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
-  margin: 170px 0 0 0;
 }
 
 /* benefits section */
@@ -146,7 +148,7 @@ h3 {
 .benefit-item p {
   font-weight: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
   color: var(--body-text-color);
 }
 
