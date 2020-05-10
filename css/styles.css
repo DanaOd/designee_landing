@@ -62,6 +62,10 @@ a:focus {
   padding: 120px 80px 120px 80px;
 }
 
+.blue-section {
+  background-color: var(--light-bg-color);
+}
+
 .site-nav {
   padding: 15 0 15 0;
   margin: 0 80 0 80;
@@ -169,10 +173,33 @@ h3 {
 .image-box:focus {
   background: var(--yellow-accent-color);
 }
+/* services section */
+.services-title {
+  width: 380px;
+  height: 70px;
+
+  background: rgba(35, 37, 54, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  color: var(--white-color);
+  text-align: center;
+}
 
 /* partners section */
 .partner-logos {
   padding: 10px;
+}
+
+/* newsletter section */
+.input-style {
+  width: 355px;
+  height: 40px;
+
+  padding: 0 10px 0 10px;
+
+  background: var(--light-bg-color);
+  border: 2px solid var(--orange-accent-color);
+  box-sizing: border-box;
+  border-radius: 30px;
 }
 
 /* footer */
@@ -221,7 +248,14 @@ h3 {
   width: 133px;
   height: 40px;
   background-color: var(--light-bg-color);
+  /* border-radius: 4px; */
   border-color: transparent;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .filter-button:hover,
