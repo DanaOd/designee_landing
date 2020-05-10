@@ -1,19 +1,16 @@
-/*
-colors
-
-#FFC75F yellow
-#F1F6FA blue bg
-#232536 black
-#6B7479 grey body-text
-#E07B37 orange
-#6193CB blue
-#FFFFFF white
-
-*/
+:root {
+  --white-color: #ffffff;
+  --blue-bg-color: #f1f6fa;
+  --black-color: #232536;
+  --grey-body-text-color: #6b7479;
+  --yellow-accent-color: #ffc75f;
+  --orange-accent-color: #e07b37;
+  --blue-accent-color: #6193cb;
+}
 
 body {
-  background-color: #ffffff;
-  color: #232536;
+  background-color: var(--white-color);
+  color: var(--black-color);
   font-family: Helvetica, sans-serif;
 }
 
@@ -22,7 +19,7 @@ ul {
 }
 
 a {
-  color: #232536;
+  color: var(--black-color);
   font-size: 14px;
   text-decoration: none;
 }
@@ -43,7 +40,7 @@ a {
 */
 a:hover,
 a:focus {
-  color: #e07b37;
+  color: var(--accent-orange-color);
   text-decoration: underline;
 }
 
@@ -56,6 +53,7 @@ a:focus {
 }
 
 .section {
+  padding: 60px 80px 60px 80px;
 }
 
 h1 {
@@ -80,40 +78,35 @@ h3 {
   text-transform: uppercase;
 }
 
-.benefits-body-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: #6b7479;
-}
-
 .benefit-item {
   width: 220px;
   float: left;
 }
 
+/* вопрос 2. лучше задавать всем P класс и писать стиль класса, 
+или можно как я ниже сделала? */
+
 .benefit-item p {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #6b7479;
+  color: var(--grey-body-text-color);
 }
 
 .benefit-item img {
-  position: center;
   width: 80px;
   height: 80px;
+  position: relative;
 }
 
 .image-box {
   width: 205px;
   height: 220px;
-  background: #f1f6fa;
+  background: var(--blue-bg-color);
   border-radius: 4px;
 }
 
 .image-box:hover,
 .image-box:focus {
-  background: #ffc75f;
+  background: var(--yellow-accent-color);
 }
