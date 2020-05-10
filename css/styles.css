@@ -184,6 +184,16 @@ h3 {
   text-align: center;
 }
 
+.services-image{
+  width:380px;
+}
+
+
+/* about section */
+.about-image {
+  width: 513px;
+}
+
 /* partners section */
 .partner-logos {
   padding: 10px;
@@ -211,6 +221,17 @@ h3 {
 
 .address-style {
   font-style: normal;
+  color: var(--white-color);
+}
+
+.address-link {
+  color: var(--white-color);
+}
+
+.copy-style{
+font-size: 14px;
+line-height: 1.4;
+text-align: center;
 }
 
 /* Cases page */
@@ -261,4 +282,32 @@ h3 {
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--yellow-accent-color);
+}
+
+.tag-style{
+width: 70px;
+height: 30px;
+margin: 0 15px 0 0;
+
+border-radius: 30px;
+border-color: transparent;
+background-color: var(--blue-accent-color);
+color: var(--white-color);
+
+font-weight: bold;
+font-size: 14px;
+line-height: 1.2;
+text-transform: uppercase;
+text-align: center;
+
+padding: 0px 15px 0px 15px;
+margin:15px;
+}
+
+.blue-button {
+  background: var(--blue-accent-color);
+  box-shadow: 0px 4px 8px rgba(79, 128, 183, 0.5);
+}
+
+
 }
