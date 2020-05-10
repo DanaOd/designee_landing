@@ -185,3 +185,46 @@ h3 {
 .address-style {
   font-style: normal;
 }
+
+/* Cases page */
+.hero-image {
+  width: 995px;
+}
+
+.cases-list {
+  margin: 30px;
+}
+
+.case-description {
+  padding: 30px;
+
+  background-color: rgba(35, 37, 54, 0.8);
+  color: var(--white-color);
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.case-description li {
+  list-style: disc;
+}
+
+.case-image {
+  width: 380px;
+}
+
+.filter-button {
+  margin: 10px;
+
+  width: 133px;
+  height: 40px;
+  background-color: var(--light-bg-color);
+  border-color: transparent;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--yellow-accent-color);
+}
