@@ -66,18 +66,16 @@ a:focus {
   background-color: var(--light-bg-color);
 }
 
-.header{
-position:fixed;
-top:0px;
-left:0px;
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .site-nav {
   padding: 15 0 15 0;
   margin: 0 80 0 80;
-
 }
-
 
 h1 {
   margin: 0 0 40px 0;
@@ -153,8 +151,8 @@ h3 {
   margin: 0 36px 36px 36px;
 }
 
-.benefit-item-position{
-float: left;
+.benefit-item-position {
+  float: left;
 }
 
 /* .benefit-right-position{
@@ -200,10 +198,9 @@ float: right;
   text-align: center;
 }
 
-.services-image{
-  width:380px;
+.services-image {
+  width: 380px;
 }
-
 
 /* about section */
 .about-image {
@@ -244,10 +241,10 @@ float: right;
   color: var(--white-color);
 }
 
-.copy-style{
-font-size: 14px;
-line-height: 1.4;
-text-align: center;
+.copy-style {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
 }
 
 /* Cases page */
@@ -300,30 +297,27 @@ text-align: center;
   background-color: var(--yellow-accent-color);
 }
 
-.tag-style{
-width: 70px;
-height: 30px;
-margin: 0 15px 0 0;
+.tag-style {
+  width: 70px;
+  height: 30px;
+  margin: 0 15px 0 0;
 
-border-radius: 30px;
-border-color: transparent;
-background-color: var(--blue-accent-color);
-color: var(--white-color);
+  border-radius: 30px;
+  border-color: transparent;
+  background-color: var(--blue-accent-color);
+  color: var(--white-color);
 
-font-weight: bold;
-font-size: 14px;
-line-height: 1.2;
-text-transform: uppercase;
-text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
 
-padding: 0px 15px 0px 15px;
-margin:15px;
+  padding: 0px 15px 0px 15px;
+  margin: 15px;
 }
 
 .blue-button {
   background: var(--blue-accent-color);
   box-shadow: 0px 4px 8px rgba(79, 128, 183, 0.5);
-}
-
-
 }
