@@ -165,9 +165,23 @@ h3 {
   box-shadow: 0px 4px 8px rgba(79, 128, 183, 0.5);
 }
 
+.blue-button:hover,
+.blue-button:focus {
+  background-color: var(--orange-accent-color);
+  color: var(--white-color);
+  text-decoration: none;
+}
+
 .orange-button {
   background: var(--orange-accent-color);
   box-shadow: 0px 4px 8px rgba(119, 67, 32, 0.5);
+}
+
+.orange-button:hover,
+.orange-button:focus {
+  background-color: var(--blue-accent-color);
+  color: var(--white-color);
+  text-decoration: none;
 }
 
 .phone-icon: {
@@ -323,23 +337,38 @@ br {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
+  align-content: center;
 }
 
 .partner-logos {
   padding-right: 100px;
+  padding-bottom: 40px;
 }
 
 .partner-logos:last-child {
   padding-right: 0px;
 }
 
-/* newsletter section */
+/* newsletter section =======================*/
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe p {
+  width: 513px;
+}
+
+.subscribe-btn {
+  margin-left: 30px;
+}
 .input-style {
   width: 355px;
   height: 40px;
 
   padding: 0 10px 0 10px;
+  margin-left: 30px;
 
   background: var(--light-bg-color);
   border: 2px solid var(--orange-accent-color);
@@ -347,29 +376,56 @@ br {
   border-radius: 30px;
 }
 
-/* footer */
+/* footer ===================================*/
 .footer-section {
   background-color: var(--black-color);
   color: var(--white-color);
-  padding: 60px 80px 40px 80px;
+  padding: 60px 0px 40px 0px;
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.address-info {
+  display: flex;
+  padding: 0 10px 0 0;
 }
 
 .address-style {
+  padding-right: 100px;
+
   font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
   color: var(--white-color);
 }
 
 .address-link {
-  color: var(--white-color);
+  padding-right: 100px;
+
+  color: inherit;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.follow-section {
+  margin-left: auto;
 }
 
 .copy-style {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
 }
 
-/* Cases page */
+/* Cases page=============================================
+========================================================== */
+
 .hero-image {
   width: 995px;
 }
