@@ -116,6 +116,14 @@ a:focus {
   margin-left: 30px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
 h2 {
   margin: 0 0 50px 0;
 
@@ -124,6 +132,8 @@ h2 {
   line-height: 1.4;
   text-align: center;
   text-transform: capitalize;
+
+  background-color: greenyellow;
 }
 
 h3 {
@@ -193,19 +203,22 @@ h1 {
 }
 
 /* benefits section =========================================*/
-.benefit-content {
+
+.content-box {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
-.benefit-content h2 {
-  text-align: center;
-  background-color: greenyellow;
+
+.benefit-list {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .benefit-item {
-  width: 220px;
+  width: 205px;
   margin: 0 78px 0px 0px;
 }
 
@@ -213,42 +226,54 @@ h1 {
   margin-right: 0px;
 }
 
-.benefit-item-position {
+.benefit-item h3 {
+  margin-bottom: 12px;
 }
-
-/* .benefit-right-position{
-width: 220px;
-margin: 0 36px 36px 36px;
-float: right;
-} */
-/* вопрос 2. лучше задавать всем P класс и писать стиль класса, 
-или можно как я ниже сделала? */
-
 .benefit-item p {
+  padding: 0px;
+  margin: 0;
+
   font-weight: normal;
   font-size: 14px;
   line-height: 1.4;
   color: var(--body-text-color);
 }
 
-.benefit-item img {
-  width: 80px;
-  height: 80px;
-  position: relative;
-}
-
 .image-box {
-  width: 205px;
   height: 220px;
+  margin: 0 0 36px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background: var(--light-bg-color);
   border-radius: 4px;
+}
+
+.image-box img {
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
 }
 
 .image-box:hover,
 .image-box:focus {
   background: var(--yellow-accent-color);
 }
-/* services section */
+/* services section ==================================*/
+
+.nopadding-section {
+  padding-top: 0px;
+}
+
+.service-list {
+  display: flex;
+}
+
+.services-list .list-item {
+}
+
 .services-title {
   width: 380px;
   height: 70px;
@@ -263,12 +288,12 @@ float: right;
   width: 380px;
 }
 
-/* about section */
+/* about section ======================================*/
 .about-image {
   width: 513px;
 }
 
-/* partners section */
+/* partners section ======================================*/
 .partner-logos {
   padding: 10px;
 }
