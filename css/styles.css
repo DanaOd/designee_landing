@@ -8,11 +8,22 @@
   --blue-accent-color: #6193cb;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* общее */
 body {
   background-color: var(--white-color);
   color: var(--black-color);
   font-family: Helvetica, sans-serif;
+  margin: 0;
 }
 
 ul {
@@ -26,31 +37,46 @@ a {
   text-decoration: none;
 }
 
-/*  вопрос 1
-я хотела поставить стиль просто классу .site-nav но это не сработало. 
-Вроде как ссылки не унаследуют цвет текста ни от куда, и им нужно менять непосредственно (синий на черный например)
-Вопрос: лучше ставить стиль элементу по всей странице, ии конкретному эл-у в классе?
-
-.site-nav a {
-  color: #232536;
-  font-size: 14px;
-  text-decoration: none;
-} 
-
-ниже я вот решила что мне легче задать стиль всем ссылкам на странице. Это ок?
-(а если что-потом менять в частности)
-*/
 a:hover,
 a:focus {
   color: var(--orange-accent-color);
   text-decoration: underline;
 }
 
-.logo {
+.section {
+  padding: 120px 20px 120px 20px;
 }
 
-.current-page {
-  color: var(--orange-accent-color);
+.blue-section {
+  background-color: var(--light-bg-color);
+}
+
+/* HEADER=============================================== */
+
+.header {
+  /* position: fixed; 
+  top: 0px;
+  left: 0px;*/
+  padding: 0 20px;
+  height: 80px;
+  /* background-color: rgb(83, 177, 214); */
+}
+.header-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  padding: 0px;
+
+  /* background-color: orange; */
+}
+
+.logo {
+  margin-right: 100px;
 }
 
 .logo:hover,
@@ -58,33 +84,36 @@ a:focus {
   transform: scale(1.1);
 }
 
-.section {
-  padding: 120px 80px 120px 80px;
+.nav-pages {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* background-color: red; */
 }
 
-.blue-section {
-  background-color: var(--light-bg-color);
+.nav-pages li {
+  margin-right: 60px;
 }
 
-.header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+.link {
+  display: block;
+  padding: 32px 0px;
 }
 
-.site-nav {
-  padding: 15 0 15 0;
-  margin: 0 80 0 80;
+.current-page {
+  color: var(--orange-accent-color);
 }
 
-h1 {
-  margin: 0 0 40px 0;
+.nav-pages li:last-child {
+  margin-right: 0px;
+}
 
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
+.contact-links {
+  margin-left: auto;
+}
+
+.contact-links .button {
+  margin-left: 30px;
 }
 
 h2 {
@@ -105,9 +134,12 @@ h3 {
 }
 
 .button {
-  width: 200px;
+  display: inline-block;
+
+  min-width: 200px;
   height: 40px;
-  margin: 30px;
+  padding: 10px 20px;
+
   border-radius: 30px;
   border-color: transparent;
   color: var(--white-color);
@@ -115,9 +147,7 @@ h3 {
   font-size: 16px;
   text-align: center;
   text-transform: capitalize;
-
   line-height: 20px;
-  padding: 10px;
 }
 
 .blue-button {
@@ -130,29 +160,60 @@ h3 {
   box-shadow: 0px 4px 8px rgba(119, 67, 32, 0.5);
 }
 
-/* hero section, пока с заливкой на бекграунде*/
+.phone-icon: {
+  vertical-align: bottom;
+}
+
+/* hero section, пока с заливкой на бекграунде ============================================*/
 .hero-section {
   background-color: rgb(36, 34, 41);
   color: var(--white-color);
-  /* height: 600px; */
+  text-align: center;
+  height: 600px;
 }
 
 .tag-text {
+  margin: 0 0 5px 0;
+
   font-size: 18px;
   line-height: 1.4;
-  text-align: center;
   text-transform: uppercase;
+  /* background-color: orange; */
 }
 
-/* benefits section */
+h1 {
+  margin: 0 0 40px 0;
+
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  /* background-color: greenyellow; */
+}
+
+/* benefits section =========================================*/
+.benefit-content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.benefit-content h2 {
+  text-align: center;
+  background-color: greenyellow;
+}
 
 .benefit-item {
   width: 220px;
-  margin: 0 36px 36px 36px;
+  margin: 0 78px 0px 0px;
+}
+
+.benefit-item:last-child {
+  margin-right: 0px;
 }
 
 .benefit-item-position {
-  float: left;
 }
 
 /* .benefit-right-position{
