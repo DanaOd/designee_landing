@@ -271,12 +271,14 @@ h1 {
   display: flex;
 }
 
-.services-list .list-item {
+.service-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .services-title {
   width: 380px;
   height: 70px;
+  padding: 26px;
 
   background: rgba(35, 37, 54, 0.8);
   border-radius: 0px 0px 4px 4px;
@@ -293,9 +295,43 @@ h1 {
   width: 513px;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+}
+.figure {
+  margin-right: 72px;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 20px;
+}
+
+.about-text {
+  width: 584px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+br {
+  padding-bottom: 10px;
+}
+
 /* partners section ======================================*/
+.partners {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .partner-logos {
-  padding: 10px;
+  padding-right: 100px;
+}
+
+.partner-logos:last-child {
+  padding-right: 0px;
 }
 
 /* newsletter section */
