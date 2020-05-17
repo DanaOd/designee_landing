@@ -47,8 +47,18 @@ a:focus {
   padding: 120px 20px 120px 20px;
 }
 
+.content-box {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .blue-section {
   background-color: var(--light-bg-color);
+}
+
+p {
+  color: var(--body-text-color);
 }
 
 /* HEADER=============================================== */
@@ -133,7 +143,7 @@ h2 {
   text-align: center;
   text-transform: capitalize;
 
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 h3 {
@@ -217,12 +227,6 @@ h1 {
 }
 
 /* benefits section =========================================*/
-
-.content-box {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .benefit-list {
   display: flex;
@@ -416,6 +420,24 @@ br {
   margin-left: auto;
 }
 
+.social-media {
+  display: inline-block;
+  padding: 12px;
+  margin: 20px 20px 0px 0px;
+
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.social-media:last-child {
+  margin-right: 0px;
+}
+
+.social-media:hover,
+.social-media:focus {
+  background-color: var(--orange-accent-color);
+}
+
 .copy-style {
   margin-top: 20px;
   font-size: 14px;
@@ -425,10 +447,33 @@ br {
 
 /* Cases page=============================================
 ========================================================== */
+.cases-section {
+  padding: 80px 20px 120px 20px;
+}
+
+.cases-hero {
+  text-align: center;
+}
+.cases-hero h1 {
+  margin-bottom: 20px;
+}
+
+.cases-hero p {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 584px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 .hero-image {
   width: 995px;
 }
+
+/* Portfolio section=========================== */
 
 .cases-list {
   margin: 30px;

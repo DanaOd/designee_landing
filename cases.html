@@ -8,35 +8,39 @@
   </head>
 
   <body>
-    <header>
-      <nav class="site-nav">
+    <header class="header">
+      <div class="header-content">
         <a href="./index.html" class="logo">
-          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <img src="./images/logo.svg" alt="logo" />
         </a>
-
-        <ul>
-          <li><a href="./index.html"> Our services</a></li>
-          <li><a href="./cases.html" class="current-page">Cases</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Contact us</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <a href="tel:+380551234567">
-          <img src="images/call_icon.svg" alt="call icon" />
-          +38 055 123 45 67
-        </a>
-
-        <a href="/" class="button blue-button">Send request</a>
+        <nav>
+          <ul class="nav-pages">
+            <li>
+              <a href="./index.html" class="link current-page"> Our services</a>
+            </li>
+            <li><a href="./cases.html" class="link">Cases</a></li>
+            <li><a href="/" class="link">About</a></li>
+            <li><a href="/" class="link">Contact us</a></li>
+          </ul>
+        </nav>
+    
+        <div class="contact-links">
+          <a href="tel:+380551234567">
+            <img src="images/call_icon.svg" alt="call icon" class="phone-icon" />
+            +38 055 123 45 67
+          </a>
+    
+          <a href="/" class="button blue-button">Send request</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="section">
+      <section class="cases-section">
+        <div class="content-box cases-hero">
         <h1>SEE OUR BEST CASES</h1>
         <p>
-          At Planning Interiors we take pride in creating functional and
+          At planning interiors we take pride in creating functional and
           beautiful commercial interior design. We will meet and work with our
           clients to plan, design and create a commercial interior design that
           meets their requirements and their budget.
@@ -46,6 +50,7 @@
           alt="furniture image"
           class="hero-image"
         />
+        </div>
       </section>
 
       <section>
@@ -131,38 +136,38 @@
     </main>
 
     <footer class="footer-section">
-      <a href="./index.html">
-        <img src="images/logo_whie.svg" alt="designee logo" class="logo" /></a>
+      <div class="content-box">
+        <div class="footer-layout">
+          <a href="./index.html">
+            <img src="images/logo_whie.svg" alt="designee logo" class="logo" /></a>
     
-      <ul>
-        <li>
-          <address class="address-style">
-            Drahobejlova 2215/6, 190 00 <br />
-            Praha 9, Czechia,
-          </address>
-        </li>
-        <li>
-          <a href="mailto:info@designee.com" class="address-link">info@designee.com</a>
-        </li>
-        <li>
-          <a href="tel:+380551234567" class="address-link">+38 055 123 45 67</a>
-        </li>
-      </ul>
+          <ul class="address-info">
+            <li>
+              <address class="address-style">
+                Drahobejlova 2215/6, 190 00 <br />
+                Praha 9, Czechia,
+              </address>
+            </li>
+            <li>
+              <a href="mailto:info@designee.com" class="address-link">info@designee.com</a> <br />
+              <a href="tel:+380551234567" class="address-link">+38 055 123 45 67</a>
+            </li>
+          </ul>
     
-      <div>
-        <h3>Follow us</h3>
-        <a href="/"><img src="images/instagram_logo.svg" alt="instagram" />
-        </a>
-        <a href="/"><img src="images/facebook_logo.svg" alt="facebook_logo" />
-        </a>
-        <a href="/"><img src="images/linkedin_logo.svg" alt="linkedin_logo" />
-        </a>
-      </div>
-    
-      <hr />
-      <p class="copy-style">
-        Copyright &copy; 2020 Designee Studio. All rights reserved.
-      </p>
+          <div class="follow-section">
+            <h3>Follow us</h3>
+            <a href="/" class="social-media"><img src="images/instagram_logo.svg" alt="instagram logo" />
+            </a>
+            <a href="/" class="social-media"><img src="images/facebook_logo.svg" alt="facebook_logo logo" />
+            </a>
+            <a href="/" class="social-media"><img src="images/linkedin_logo.svg" alt="linkedin_logo" />
+            </a>
+          </div>
+        </div>
+        <hr />
+        <p class="copy-style">
+          Copyright &copy; 2020 Designee Studio. All rights reserved.
+        </p>
     </footer>
   </body>
 </html>
