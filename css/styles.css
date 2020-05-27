@@ -120,6 +120,28 @@ p {
 
 .contact-links {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-links p:hover {
+  color: var(--orange-accent-color);
+  text-decoration: none;
+}
+
+.phone-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.phone-text {
+  display: inline-block;
+}
+
+.phone-icon {
+  margin-right: 10px;
 }
 
 .contact-links .button {
@@ -194,13 +216,15 @@ h3 {
   text-decoration: none;
 }
 
-.phone-icon {
-  vertical-align: bottom;
-}
-
 /* hero section, пока с заливкой на бекграунде ============================================*/
 .hero-section {
-  background-color: rgb(36, 34, 41);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url(../images/hero_image1.png);
+  background-position: center;
   color: var(--white-color);
   text-align: center;
   height: 600px;
@@ -208,6 +232,7 @@ h3 {
 
 .tag-text {
   margin: 0 0 5px 0;
+  color: var(--white-color);
 
   font-size: 18px;
   line-height: 1.4;
@@ -231,6 +256,7 @@ h1 {
 .benefit-list {
   display: flex;
   margin: 0px;
+  padding: 0px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -305,7 +331,10 @@ h1 {
 }
 
 .services-image {
-  width: 380px;
+  display: block;
+  width: 100%;
+  height: auto;
+  /* flex: */
 }
 
 /* about section ======================================*/
@@ -544,7 +573,9 @@ br {
 }
 
 .case-image {
-  width: 380px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .filter-button:hover,
