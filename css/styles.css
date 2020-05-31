@@ -132,16 +132,22 @@ p {
 .phone-nav {
   display: flex;
   justify-content: center;
+  align-content: center;
   padding: 0px;
   margin: 0px;
 }
 
 .phone-text {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .phone-icon {
+  /* display: block; */
   margin-right: 10px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  align-self: center;
 }
 
 .contact-links .button {
@@ -218,16 +224,17 @@ h3 {
 
 /* hero section, пока с заливкой на бекграунде ============================================*/
 .hero-section {
+  background-color: grey;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.15)
     ),
-    url(../images/hero_image1.png);
+    url(../images/hero_image1.jpg);
   background-position: center;
   color: var(--white-color);
   text-align: center;
-  height: 600px;
+  min-height: 600px;
 }
 
 .tag-text {
@@ -264,6 +271,7 @@ h1 {
 .benefit-item {
   width: 205px;
   margin: 0 78px 0px 0px;
+  position: relative;
 }
 
 .benefit-item:last-child {
@@ -292,6 +300,28 @@ h1 {
 
   background: var(--light-bg-color);
   border-radius: 4px;
+}
+/* 
+.image-on-bg {
+  height: 220px;
+  margin: 0 0 36px 0;
+  background: var(--light-bg-color);
+
+  border-radius: 4px;
+} */
+
+.benefit-item::before {
+  content: "";
+  height: 220px;
+  margin: 0 0 36px 0;
+  background: var(--light-bg-color);
+  background-image: url(/images/icons8-wood-64.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.benefit-item::before:hover {
+  background-color: var(--yellow-accent-color);
 }
 
 .image-box img {
@@ -347,12 +377,14 @@ h1 {
   align-items: center;
 }
 .figure {
-  margin-right: 72px;
+  margin: 0 72px 0 0;
+  padding: 0px;
   text-align: center;
 }
 
 figcaption {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
+  padding: 0px;
 }
 
 .about-text {
@@ -371,11 +403,13 @@ br {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
+  padding: -20px -50px;
 }
 
 .partner-logos {
-  padding-right: 100px;
-  padding-bottom: 40px;
+  /* padding-right: 100px;
+  padding-bottom: 40px; */
+  margin: 20px 50px 20px 50px;
 }
 
 .partner-logos:last-child {
@@ -453,8 +487,10 @@ br {
   display: inline-block;
   padding: 12px;
   margin: 20px 20px 0px 0px;
+  width: 44px;
+  height: 44px;
 
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
 }
 

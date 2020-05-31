@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-amazon_logo {
+  width: 1.09765625em;
+}
+
+.icon-BRITOSH_LOGO {
+  width: 3.4287109375em;
+}
+
+.icon-logo {
+  width: 2.4599609375em;
+}
+
+.icon-logo_whie {
+  width: 2.4599609375em;
+}
+
+.icon-ksc_logo {
+  width: 1.974609375em;
+}
+
+.icon-journees_logo {
+  width: 7.400390625em;
+}
+
+.icon-TESLA_LOGO {
+  width: 7.759765625em;
+}

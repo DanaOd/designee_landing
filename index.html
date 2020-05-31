@@ -25,11 +25,10 @@
 
         <div class="contact-links">
           <a href="tel:+380551234567" class="phone-nav">
-            <img
-              src="images/call_icon.svg"
-              alt="call icon"
-              class="phone-icon"
-            />
+            <svg class="phone-icon">
+              <use href="./images/icomoon/symbol-defs.svg#icon-call_icon">
+              </use>
+            </svg>
             <p class="phone-text">+38 055 123 45 67</p>
           </a>
 
@@ -50,11 +49,19 @@
         <div class="content-box">
           <h2>Benefits</h2>
           <ul class="benefit-list">
-            <li class="benefit-item">
+            <!-- <li class="benefit-item">
               <div class="image-box">
                 <img src="images/icons8-wood-64.png" alt="wood icon" />
               </div>
               <h3>Eco materials</h3>
+              <p>
+                low maintenance cost, better air quality, energy efficiency,
+                better waste management and low exposure to toxic material.
+              </p>
+            </li> -->
+            <li class="benefit-item">
+
+              <h3 >Eco materials</h3>
               <p>
                 low maintenance cost, better air quality, energy efficiency,
                 better waste management and low exposure to toxic material.
@@ -106,7 +113,7 @@
             <li class="service-item">
               <img
                 src="./images/serv-bedroom-img.jpg"
-                alt="berdoom interior photo"
+                alt="bedroom interior photo"
                 class="services-image"
               />
               <h3 class="services-title">Cozy Bedrooms</h3>
@@ -166,7 +173,8 @@
 
       <section class="section">
         <h2>Our partners</h2>
-        <div class="content-box partners">
+        <div class="content-box">
+          <div class="partners">
           <a href="#" target="_blank" class="partner-logos"
             ><img src="./images/BRITOSH_LOGO.svg" alt="british council logo"
           /></a>
@@ -197,6 +205,7 @@
           <a href="#" target="_blank" class="partner-logos"
             ><img src="images/ksc_logo.svg" alt="ksc logo"
           /></a>
+          </div>
         </div>
       </section>
 
@@ -242,14 +251,23 @@
 
           <div class="follow-section">
             <h3>Follow us</h3>
-            <a href="/" class="social-media"
-              ><img src="images/instagram_logo.svg" alt="instagram logo" />
+            <a href="/" class="social-media">
+              <svg width="20px" height="20px"> 
+                <use href="./images/icomoon/symbol-defs.svg#icon-instagram_logo">
+                </use>
+              </svg>
             </a>
-            <a href="/" class="social-media"
-              ><img src="images/facebook_logo.svg" alt="facebook_logo logo" />
+            <a href="/" class="social-media">
+              <svg width="20px" height="20px">
+                <use href="./images/icomoon/symbol-defs.svg#icon-facebook_logo">
+                </use>
+              </svg>
             </a>
-            <a href="/" class="social-media"
-              ><img src="images/linkedin_logo.svg" alt="linkedin_logo" />
+            <a href="/" class="social-media">
+              <svg width="20px" height="20px">
+                <use href="./images/icomoon/symbol-defs.svg#icon-linkedin_logo">
+                </use>
+              </svg>
             </a>
           </div>
         </div>
