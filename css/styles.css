@@ -271,7 +271,6 @@ h1 {
 .benefit-item {
   width: 205px;
   margin: 0 78px 0px 0px;
-  position: relative;
 }
 
 .benefit-item:last-child {
@@ -310,19 +309,19 @@ h1 {
   border-radius: 4px;
 } */
 
-.benefit-item::before {
+/* .benefit-item::before {
   content: "";
   height: 220px;
   margin: 0 0 36px 0;
-  background: var(--light-bg-color);
-  background-image: url(/images/icons8-wood-64.png);
+  background-color: var(--light-bg-color);
+  background-image: url(/images/icons8-oak-tree-80.png);
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-.benefit-item::before:hover {
+/* .benefit-item:hover {
   background-color: var(--yellow-accent-color);
-}
+} */
 
 .image-box img {
   justify-content: center;
@@ -412,8 +411,16 @@ br {
   margin: 20px 50px 20px 50px;
 }
 
-.partner-logos:last-child {
+/* .partner-logos:last-child {
   padding-right: 0px;
+} */
+
+.logo-image {
+  fill: #989ea1;
+}
+
+.logo-image:hover {
+  fill: var(--orange-accent-color);
 }
 
 /* newsletter section =======================*/
