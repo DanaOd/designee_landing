@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- <header class="header">
+      <div class="header-content">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <nav>
+          <ul class="nav-pages">
+            <li>
+              <a href="./index.html" class="link current-bordered-page">
+                Our services</a
+              >
+            </li>
+            <li><a href="./cases.html" class="link">Cases</a></li>
+            <li><a href="/" class="link">About</a></li>
+            <li><a href="/" class="link">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact-links">
+          <a href="tel:+380551234567" class="phone-nav">
+            <svg class="phone-icon">
+              <use href="./images/icomoon/symbol-defs.svg#icon-call_icon"></use>
+            </svg>
+            +38 055 123 45 67
+          </a>
+
+          <a href="/" class="button blue-button">Send request</a>
+        </div>
+      </div>
+    </header> -->
+    <main>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, cum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit, eos! Amet neque quia, dignissimos quis consequuntur
+          earum. Explicabo maxime voluptate fugit eveniet, corrupti sint, odio
+          nobis rem quidem voluptatum corporis! Molestiae, vel dolore voluptates
+          perferendis minima a dolores deleniti obcaecati. Ipsam maxime sequi
+          mollitia, vel consequatur odit, eius sit, ipsum aliquam inventore ab
+          sed quaerat ad iste dolorem possimus repellat. Cum voluptas tenetur
+          illum corrupti nemo explicabo error ullam esse quas. Perferendis animi
+          totam consequuntur ullam qui esse ab obcaecati in, eveniet, placeat
+          corrupti a asperiores perspiciatis, facilis illum porro? Quibusdam
+          harum, voluptatibus laudantium itaque dicta voluptatum sequi quos
+          nesciunt quia doloribus labore consequatur error sint earum reiciendis
+          porro.
+        </p>
+      </div>
+      <div class="backdrop">
+        <div class="modal-window">
+          <h1 class="form-title">We’ll get in touch with you in 24 hours!</h1>
+          <form action="" class="form js-speaker-form">
+            <div class="form-field">
+              <label for="username">Your name:&ast;</label>
+              <input
+                type="text"
+                name="name"
+                id="username"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="phone">Your phone number:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="38(067)123-45-67"
+              />
+            </div>
+            <div class="form-field">
+              <label for="mail">Your email:&ast;</label>
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="john@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="date">Book a meeting:</label>
+              <input type="datetime-local" name="date" id="Date" />
+            </div>
+
+            <select
+              name="contact-me"
+              id="contact-me"
+              placeholder="Contact me:"
+              class="select"
+            >
+              <option value="at the morning">at the morning</option>
+              <option value="during the workday">during the workday</option>
+              <option value="at evening">at evening</option>
+              <option value="anytime">anytime</option>
+            </select>
+
+            <div role="group" class="form-field">
+              <p class="options-title">
+                Send via:
+              </p>
+              <ul class="options">
+                <li>
+                  <input type="radio" name="contact-by" id="sms" value="SMS" />
+                  <label for="sms">SMS</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="contact-by"
+                    id="viber"
+                    value="Viber"
+                  />
+                  <label for="viber">Viber</label>
+                </li>
+              </ul>
+            </div>
+
+            <textarea
+              name="comment"
+              rows="5"
+              placeholder="Your notes"
+              class="textarea"
+            ></textarea>
+            <div class="terms">
+              <input type="checkbox" name="terms" id="terms" value="yes" />
+              <label for="terms">I agree with Terms and Coditions</label>
+            </div>
+
+            <div><input type="file" multiple accept="image/jpeg" /></div>
+
+            <button type="submit" class="button blue-button">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!--  Cкрипт скопипащен, принцип работы-не знаю (js еще не учили), знаю что 
+        в консоли показывает отправленные поля-->
+
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
+  </body>
+</html>
