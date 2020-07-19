@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/css-for-modals.css" />
   </head>
   <body>
     <!-- <header class="header">
@@ -66,39 +66,30 @@
           <h1 class="form-title">We’ll get in touch with you in 24 hours!</h1>
           <form action="" class="form js-speaker-form">
             <div class="form-field">
-              <label for="username"
-                >Your name:<span class="red-asterix">&ast;</span></label
-              >
-              <input
-                type="text"
-                name="name"
-                id="username"
-                placeholder="John Doe"
-                required
-              />
+              <input class="form-input" type="text" name="name" id="username" />
+              <label for="username" class="form-label">
+                Your name:<span class="red-asterix">&ast;</span>
+              </label>
             </div>
+
             <div class="form-field">
-              <label for="phone">Your phone number:</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="38(067)123-45-67"
-              />
+              <input class="form-input" type="tel" name="phone" id="phone" />
+              <label for="phone" class="form-label">Your phone number:</label>
             </div>
+
             <div class="form-field">
-              <label for="mail"
-                >Your email:<span class="red-asterix">&ast;</span></label
-              >
               <input
+                class="form-input form-long"
                 type="email"
                 name="email"
                 id="mail"
-                placeholder="john@gmail.com"
-                required
               />
+              <label for="mail" class="form-label">
+                Your email:<span class="red-asterix">&ast;</span></label
+              >
             </div>
-            <div class="form-field">
+
+            <!-- <div class="form-field">
               <label for="date">Book a meeting:</label>
               <input type="datetime-local" name="date" id="Date" />
             </div>
@@ -134,7 +125,7 @@
                   <label for="viber">Viber</label>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
             <textarea
               name="comment"

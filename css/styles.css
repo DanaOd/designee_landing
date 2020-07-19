@@ -171,7 +171,7 @@ p {
   height: 16px;
   align-self: center;
   fill: #828282;
-  color: ;
+  /* color: red; */
 }
 
 .phone-icon:hover,
@@ -821,6 +821,8 @@ br {
 .form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
+
   width: 210px;
   margin-right: 20px;
   margin-bottom: 30px;
@@ -912,6 +914,8 @@ textarea {
 .terms {
   margin-right: 20px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .terms label {
@@ -925,5 +929,26 @@ textarea {
   height: 18px;
   margin: 0px;
 
-  background-color: red;
+  border-color: red;
+}
+
+.terms-link {
+  color: var(--orange-accent-color);
+  text-decoration: underline;
+}
+
+.red-asterix {
+  color: red;
+  padding: 0;
+  margin: 0;
+}
+
+.form-input {
+}
+
+.form-label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
